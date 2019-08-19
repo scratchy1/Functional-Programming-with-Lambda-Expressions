@@ -1,0 +1,13 @@
+package funktion2paramsund1lambdaoperatorübergeben;
+
+import java.util.function.BiFunction;
+
+/*dies oben ist ein Interface mit Methode R apply(T t, U u)
+Interface
+BiFunction<T, U, R>. Die Typparameter stehen dabei für die Typen des
+ersten Arguments, des zweiten Arguments und des Rückgabetyps.*/
+public class Executor {
+    int exc(BiFunction<Integer, Integer, Integer> f, int op1, int op2) {
+        return f.apply(op1, op2);
+    }
+}

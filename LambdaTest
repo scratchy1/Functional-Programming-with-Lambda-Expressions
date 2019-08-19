@@ -1,0 +1,15 @@
+package funktion2paramsund1lambdaoperatorübergeben;
+import java.util.function.BiFunction;
+public class LambdaTest {
+
+    public static void main(String[] args) {
+        Executor operator = new Executor();
+        BiFunction<Integer, Integer, Integer> plus = (a, b) -> a + b;
+        BiFunction<Integer, Integer, Integer> mult = (a, b) -> a * b;
+
+        System.out.println(operator.exc(plus, 7, 4));
+        System.out.println(operator.exc(mult, 6, 7));
+
+    }
+
+}
